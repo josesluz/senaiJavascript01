@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atividades SENAI - JavaScript">
+    <meta name="author" content="José Luz">
+    <title>José Luz | Soluções em Tecnologia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="col-sm-12 bg-secondary">
+			<center><h2>Atividades Javascript</h2></center>
+	</div>
+
+<div class="row">
+
+	<div class="col-sm-12 bg-primary">
+		<br>
+	</div>
+	
+	<<!-- QUESTÃO 0 -->
+    <div class="col-sm-12 bg-info">
+        <div class="col-sm-6">
+            <br>
+            <p>0) Crie uma caixa de texto em html<br>
+            Crie um botão em html que chama código em Javascript que dependendo do valor introduzido mostra uma mensagem diferente
+            </p>
+            <ul>
+                <li>Entre 0 e 10, mostra “Insuficiente”</li>
+                <li>Entre 10 e 14, mostra “Bom”</li>
+                <li>Maior que 14, mostra “Muito Bom”</li>
+            </ul>
+        </div>
+		<div class="col-sm-6"> 
+			<div class="form-row">
+				<div class="col-md-3">
+					<br>
+					<br>
+					<label>Valor:</label><br>
+					<input type="text" id="valor" value="" class="text-primary"><br>
+				</div>
+				<div class="col-md-2">
+					<br>
+					<br><center>
+					<button onclick="validar()" class="btn btn-primary">Validar</button></center>
+				</div>
+				<div class="col-md-2">
+					<br>
+					<br>
+					<p>Status:</p> <p id="mensagem"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-sm-12 bg-primary">
+		<br>
+	</div>
+	
+	<<!-- QUESTÃO 1 -->	    
+    <div class="col-sm-12 bg-info">
+        <div class="col-sm-6">
+            <br>
+            <br>
+            <p>1) Escreva um código em JavaScript para calcular a multiplicação e divisão de 2 números.</p>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-row">
+                <div class="col-md-3">            
+                	<label>Número 1:</label><br>
+                	<input type="text" id="num1" value="" class="text-primary"  pattern=“[0-9]+$”><br><br>
+                	<label>Número 2:</label><br>
+                	<input type="text" id="num2" value="" class="text-primary"><br>
+                	<br>
+                </div>
+                <div class="col-md-2">
+					<br><center>
+                	<button onclick="multiplicar()" class="btn btn-primary">Multiplicar</button><br><br>
+                	<button onclick="dividir()" class="btn btn-primary">Dividir</button></center>
+                </div>
+                <div class="col-md-2">
+					<br>
+        	        <p>Resultado:</p>
+        	        <p id="resultado"></p>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-sm-12 bg-primary">
+		<br>
+	</div>
+	
+	<<!-- QUESTÃO 2 -->    
+    <div class="col-sm-12 bg-info">
+        <div class="col-sm-6">
+            <br>
+            <p>2)Escreva um programa em JavaScript para converter a temperatura de Graus Celsius para Fahrenheit. 
+             <br>Fórmula : c/5 = (f-32)/9 [ c = Temperatura em Graus Celsius e  f = Temperatura em  Fahrenheit
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-row">
+                <div class="col-md-3">
+					<br>				
+                	<label>Graus:</label><br>
+                	<input type="text" id="grausC" value="" class="text-primary" title="Informe apenas números"><br>
+                	<br>
+        	    </div>
+                <div class="col-md-2">
+					<br>
+                	<center><button onclick="celsiusFahrenheit()" class="btn btn-primary">Converter</button></center>
+                </div>
+                <div class="col-md-3">
+					<br>				
+                	<p>Temperatura em Fahrenheit:</p>
+                	<p id="resultadoFahrenheit"></p>  
+    	        </div>            
+			</div>
+		</div>
+    </div>
+	
+	<div class="col-sm-12 bg-primary">
+		<br>
+	</div>
+	
+	<<!-- QUESTÃO 3 -->	
+    <div class="col-sm-12 bg-info">
+        <div class="col-sm-6">
+			<br>
+            <p>3) Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não.
+            <br>Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+            <ul>
+                <li>Ter no mínimo 65 anos de idade.</li>
+                <li>Ter trabalhado no mínimo 30 anos.</li>
+                <li>Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.</li>
+            </ul>
+            Com base nas informações acima, faça um algoritmo que leia:
+            <ul>
+                <li>O número do empregado (código), o ano de seu nascimento e o ano de seu ingresso na empresa.</li>   
+                <li>O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-row">
+                <div class="col-md-3">
+                    <label>Código:</label><br>
+                	<input type="text" id="codigo" value="" class="text-primary"><br>
+                	<br>
+                	<label>Ano de nascimento:</label><br>
+                	<input type="text" id="anoNascimento" value="" class="text-primary" title="Informe o ano no formato XXXX"><br>
+                	<br>
+                	<label>Ano de ingresso na empresa:</label><br>
+                	<input type="text" id="anoIngresso" value="" class="text-primary" title="Informe o ano no formato XXXX"><br>
+                	<br>
+                </div>
+                <div class="col-md-2">
+                    <br><br><br>
+                	<center><button onclick="consultarAposentadoria()" class="btn btn-primary">Consultar</button></center>
+                </div>
+                <div class="col-md-4">
+					<br><br>
+        	        <p id="resultadoAposentadoria"></p>
+        	    </div>
+			</div>
+		</div>    
+	</div>
+	<div class="col-sm-12 bg-primary">	
+	<br>
+	</div>	
+</div>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+// 0) Escreva um código em JavaScript para calcular a multiplicação de 2 números.
+function validar() {
+	var valor = document.getElementById("valor").value;
+	
+	if ((valor >= 0) && (valor <= 9)){
+		document.getElementById("mensagem").innerHTML = "Insuficiente";
+	} else if ((valor >= 10) && (valor <= 14)){
+		document.getElementById("mensagem").innerHTML = "Bom";
+	} else if ((valor > 14)){
+		document.getElementById("mensagem").innerHTML = "Muito Bom";
+	} else {
+		document.getElementById("mensagem").innerHTML = "Digite um valor válido";	
+	}
+}
+
+// 1) Escreva um código em JavaScript para calcular a multiplicação de 2 números.
+function multiplicar() {
+	var num1 = document.getElementById("num1").value;
+	var num2 = document.getElementById("num2").value;
+	document.getElementById("resultado").innerHTML = num1*num2;
+}
+
+// 1) Escreva um código em JavaScript para calcular a divisão de 2 números.
+function dividir() {
+	var num1 = document.getElementById("num1").value;
+	var num2 = document.getElementById("num2").value;
+	document.getElementById("resultado").innerHTML = num1/num2;
+}
+
+//2) Escreva um programa em JavaScript para converter a temperatura de Graus Celsius para Fahrenheit. 
+function celsiusFahrenheit () {
+	var C = document.getElementById("grausC").value;
+	document.getElementById("resultadoFahrenheit").innerHTML = ((9*C)/5) + 32;;
+}
+
+//3) Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não.
+//Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+// - Ter no mínimo 65 anos de idade e Ter trabalhado no mínimo 25 anos.
+// - Ter no mínimo 60 anos e ter trabalhado no mínimo 30 anos.
+// Com base nas informações acima, faça um algoritmo que leia:
+//o número do empregado (código), o ano de seu nascimento e o ano de seu ingresso na empresa. 
+function consultarAposentadoria () {
+	var anoNascimento = document.getElementById("anoNascimento").value;
+	var anoIngresso = document.getElementById("anoIngresso").value;
+	var codigo = document.getElementById("codigo").value;
+	var anoAtual = 2019;
+	var tempoTrabalhado = (anoAtual-anoIngresso);
+	var idade = (anoAtual-anoNascimento);
+	
+	
+	if ((idade >= 65) || (tempoTrabalhado >= 30) || ((idade >= 60) && (tempoTrabalhado >= 25))){
+		document.getElementById("resultadoAposentadoria").innerHTML = "O colaborador com nº de marícula "+codigo+" possui "+idade+" anos de idade e "+tempoTrabalhado+" anos de trabalho. Requer aposentadoria";
+	}	else{
+		document.getElementById("resultadoAposentadoria").innerHTML = "O colaborador com nº de marícula "+codigo+" possui "+idade+" anos de idade e "+tempoTrabalhado+" anos de trabalho. Não requer aposentadoria";
+	}
+}
+
+</SCRIPT>
+</body>
+</html>
